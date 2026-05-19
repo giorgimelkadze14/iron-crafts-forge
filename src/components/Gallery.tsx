@@ -2,12 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import g1 from "@/assets/g1.jpg";
-import g2 from "@/assets/g2.jpg";
-import g3 from "@/assets/g3.jpg";
 import g4 from "@/assets/g4.jpg";
 import g5 from "@/assets/g5.jpg";
-import g6 from "@/assets/g6.jpg";
 import g7 from "@/assets/g7.jpg";
 import g8 from "@/assets/g8.jpg";
 
@@ -15,14 +11,10 @@ type Cat = "all" | "gates" | "railings" | "structures" | "details";
 type Item = { src: string; cat: Exclude<Cat, "all">; h: "tall" | "wide" | "sq" };
 
 const base: Item[] = [
-  { src: g1, cat: "gates", h: "tall" },
-  { src: g2, cat: "railings", h: "wide" },
-  { src: g3, cat: "details", h: "sq" },
   { src: g4, cat: "railings", h: "tall" },
   { src: g5, cat: "gates", h: "wide" },
   { src: g7, cat: "structures", h: "tall" },
   { src: g8, cat: "details", h: "sq" },
-  { src: g6, cat: "structures", h: "wide" },
 ];
 
 // Build ~24 items by reusing photographs (until the company supplies the full set).
