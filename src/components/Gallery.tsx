@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import g4 from "@/assets/g4.jpg";
+import g4 from "@/assets/g4.jfif";
 import g5 from "@/assets/g5.jpg";
 import g7 from "@/assets/g7.jpg";
 import g8 from "@/assets/g8.jpg";
