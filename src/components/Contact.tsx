@@ -99,11 +99,7 @@ export function Contact() {
                 </Field>
               </div>
 
-              <div className="mt-7 flex items-center justify-between gap-4">
-                <span className={`text-xs text-muted-foreground transition ${sent ? "opacity-100" : "opacity-0"} ${ka ? "font-ka" : ""}`}>
-                  <Check size={14} className="mr-1 inline" />
-                  {t("contact.form.sent")}
-                </span>
+              <div className="mt-7 flex items-center justify-end gap-4">
                 <button
                   type="submit"
                   className="group inline-flex items-center gap-3 rounded-sm bg-foreground px-7 py-3.5 text-xs uppercase tracking-[0.25em] text-background transition hover:bg-accent hover:text-accent-foreground"
