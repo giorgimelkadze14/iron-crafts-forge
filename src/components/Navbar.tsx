@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Navbar() {
   const { t, lang, setLang } = useI18n();
