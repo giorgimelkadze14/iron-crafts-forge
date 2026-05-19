@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Navbar() {
   const { t, lang, setLang } = useI18n();
@@ -29,8 +30,8 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-20 md:px-8">
         <a href="#top" className="group flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-sm metal-border">
-            <span className="text-[11px] font-bold tracking-[0.2em] text-foreground">IC</span>
+          <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-full">
+            <img src={logo} alt="Iron Crafts" className="h-10 w-10 object-contain" />
           </span>
           <span className="hidden flex-col leading-none sm:flex">
             <span className="text-sm font-semibold tracking-[0.25em] text-foreground">IRON CRAFTS</span>
