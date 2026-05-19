@@ -1,17 +1,14 @@
-import { useState, type FormEvent } from "react";
+import { type FormEvent } from "react";
 import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
-import { Phone, Facebook, ArrowRight, Check } from "lucide-react";
+import { Phone, Facebook, ArrowRight } from "lucide-react";
 
 export function Contact() {
   const { t, lang } = useI18n();
   const ka = lang === "ka";
-  const [sent, setSent] = useState(false);
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
     (e.target as HTMLFormElement).reset();
   }
 
@@ -102,11 +99,7 @@ export function Contact() {
                 </Field>
               </div>
 
-              <div className="mt-7 flex items-center justify-between gap-4">
-                <span className={`text-xs text-muted-foreground transition ${sent ? "opacity-100" : "opacity-0"} ${ka ? "font-ka" : ""}`}>
-                  <Check size={14} className="mr-1 inline" />
-                  {t("contact.form.sent")}
-                </span>
+              <div className="mt-7 flex items-center justify-end gap-4">
                 <button
                   type="submit"
                   className="group inline-flex items-center gap-3 rounded-sm bg-foreground px-7 py-3.5 text-xs uppercase tracking-[0.25em] text-background transition hover:bg-accent hover:text-accent-foreground"
