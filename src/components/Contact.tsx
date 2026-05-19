@@ -31,7 +31,7 @@ export function Contact() {
           </a>
 
           <a
-            href="https://www.facebook.com/p/Iron-Crafts-61563751767528/"
+            href="https://www.facebook.com/share/1GQb5GP5q1/"
             target="_blank"
             rel="noreferrer"
             className="group flex items-center justify-between rounded-sm border border-border bg-card p-5 transition hover:border-accent"
