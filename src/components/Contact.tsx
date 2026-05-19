@@ -1,17 +1,14 @@
 import { useState, type FormEvent } from "react";
 import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
-import { Phone, Facebook, ArrowRight, Check } from "lucide-react";
+import { Phone, Facebook, ArrowRight } from "lucide-react";
 
 export function Contact() {
   const { t, lang } = useI18n();
   const ka = lang === "ka";
-  const [sent, setSent] = useState(false);
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
     (e.target as HTMLFormElement).reset();
   }
 
