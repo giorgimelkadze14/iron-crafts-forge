@@ -36,7 +36,7 @@ export function Footer() {
           </nav>
 
           <a
-            href="https://www.facebook.com/p/Iron-Crafts-61563751767528/"
+            href="https://www.facebook.com/share/1GQb5GP5q1/"
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook"

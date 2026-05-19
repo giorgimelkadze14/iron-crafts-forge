@@ -2,19 +2,42 @@ import { useEffect, useMemo, useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import g4 from "@/assets/g4.jfif";
+import g1 from "@/assets/g1.jpg";
+import g2 from "@/assets/g2.jpg";
+import g3 from "@/assets/g3.jpg";
+import g4 from "@/assets/g4.jpg";
 import g5 from "@/assets/g5.jpg";
+import g6 from "@/assets/g6.jpg";
 import g7 from "@/assets/g7.jpg";
 import g8 from "@/assets/g8.jpg";
+import g9 from "@/assets/g9.jpg";
+import g10 from "@/assets/g10.jpg";
+import g11 from "@/assets/g11.jpg";
+import g12 from "@/assets/g12.jpg";
+import g13 from "@/assets/g13.jpg";
+import g14 from "@/assets/g14.jpg";
+import g15 from "@/assets/g15.jpg";
 
 type Cat = "all" | "gates" | "railings" | "structures" | "details";
 type Item = { src: string; cat: Exclude<Cat, "all">; h: "tall" | "wide" | "sq" };
 
 const base: Item[] = [
+  { src: g1, cat: "railings", h: "tall" },
+  { src: g2, cat: "details", h: "wide" },
+  { src: g3, cat: "structures", h: "sq" },
   { src: g4, cat: "railings", h: "tall" },
   { src: g5, cat: "gates", h: "wide" },
+  { src: g6, cat: "details", h: "sq" },
   { src: g7, cat: "structures", h: "tall" },
   { src: g8, cat: "details", h: "sq" },
+  { src: g9, cat: "structures", h: "wide" },
+  { src: g10, cat: "railings", h: "sq" },
+  { src: g11, cat: "railings", h: "wide" },
+  { src: g12, cat: "gates", h: "sq" },
+  { src: g13, cat: "gates", h: "tall" },
+  { src: g14, cat: "railings", h: "tall" },
+  { src: g15, cat: "details", h: "wide" },
+
 ];
 
 // Build ~24 items by reusing photographs (until the company supplies the full set).

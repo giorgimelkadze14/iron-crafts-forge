@@ -68,7 +68,7 @@ export const dict: Dict = {
   "contact.eyebrow": { ka: "კონტაქტი", en: "Contact" },
   "contact.title": { ka: "მოგვწერეთ თქვენი იდეა", en: "Tell us about your project" },
   "contact.sub": {
-    ka: "მოგვწერეთ რას იაზრებთ — ესკიზი, ფოტო ან მოკლე აღწერა. დაგიკავშირდებით 24 საათში.",
+    ka: "დაგვიკავშირდით",
     en: "Send a sketch, a photo, or a short description. We'll get back to you within 24 hours.",
   },
   "contact.phone": { ka: "ტელეფონი", en: "Phone" },
