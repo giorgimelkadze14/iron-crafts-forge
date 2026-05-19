@@ -1,6 +1,6 @@
 import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
-import g6 from "@/assets/g6.jpg";
+import g6 from "@/assets/g7.jpg";
 
 export function About() {
   const { t, lang } = useI18n();
