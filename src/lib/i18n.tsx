@@ -48,10 +48,10 @@ export const dict: Dict = {
   "gallery.gates": { ka: "ჭიშკრები", en: "Gates" },
   "gallery.railings": { ka: "მოაჯირები", en: "Railings" },
   "gallery.structures": { ka: "კონსტრუქციები", en: "Structures" },
-  "gallery.details": { ka: "დეტალები", en: "Details" },
+  "gallery.stairs": { ka: "კიბეები", en: "Stairs" },
 
   "why.eyebrow": { ka: "რატომ Iron Crafts", en: "Why Iron Crafts" },
-  "why.title": { ka: "ხელობა, რომელიც დეტალში ჩანს", en: "Craft you can feel in the details" },
+  "why.title": { ka: "ხელობა, რომელიც დეტალში ჩანს", en: "Craft you can feel in the stairs" },
   "why.1.t": { ka: "ზუსტი ხელობა", en: "Precision Craftsmanship" },
   "why.1.d": { ka: "თითოეული შენაერთი იწონება, იზომება და მუშავდება ხელით.", en: "Every joint is measured, welded and finished by hand." },
   "why.2.t": { ka: "გამძლე მასალა", en: "Durable Materials" },
@@ -66,9 +66,9 @@ export const dict: Dict = {
   "why.6.d": { ka: "მონტაჟი თქვენთან, სუფთად და დროულად.", en: "Installed on location, cleanly and on schedule." },
 
   "contact.eyebrow": { ka: "კონტაქტი", en: "Contact" },
-  "contact.title": { ka: "მოგვწერეთ თქვენი იდეა", en: "Tell us about your project" },
+  "contact.title": { ka: "დაგვიკავშირდით", en: "Tell us about your project" },
   "contact.sub": {
-    ka: "დაგვიკავშირდით",
+    ka: "",
     en: "Send a sketch, a photo, or a short description. We'll get back to you within 24 hours.",
   },
   "contact.phone": { ka: "ტელეფონი", en: "Phone" },

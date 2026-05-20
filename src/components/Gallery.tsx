@@ -17,26 +17,45 @@ import g12 from "@/assets/g12.jpg";
 import g13 from "@/assets/g13.jpg";
 import g14 from "@/assets/g14.jpg";
 import g15 from "@/assets/g15.jpg";
+import g16 from "@/assets/g16.jpg";
+import g17 from "@/assets/g17.jpg";
+import g18 from "@/assets/g18.jpg";
+import g19 from "@/assets/g19.jpg";
+import g20 from "@/assets/g20.jpg";
+import g21 from "@/assets/g21.jpg";
+import g22 from "@/assets/g22.jpg";
+import g23 from "@/assets/g23.jpg";
+import g24 from "@/assets/g24.jpg";
 
-type Cat = "all" | "gates" | "railings" | "structures" | "details";
+type Cat = "all" | "gates" | "railings" | "structures" | "stairs";
 type Item = { src: string; cat: Exclude<Cat, "all">; h: "tall" | "wide" | "sq" };
 
 const base: Item[] = [
   { src: g1, cat: "railings", h: "tall" },
-  { src: g2, cat: "details", h: "wide" },
-  { src: g3, cat: "structures", h: "sq" },
-  { src: g4, cat: "railings", h: "tall" },
+  { src: g2, cat: "railings", h: "wide" },
+  { src: g3, cat: "stairs", h: "sq" },
+  { src: g4, cat: "gates", h: "tall" },
   { src: g5, cat: "gates", h: "wide" },
-  { src: g6, cat: "details", h: "sq" },
+  { src: g6, cat: "railings", h: "sq" },
   { src: g7, cat: "structures", h: "tall" },
-  { src: g8, cat: "details", h: "sq" },
+  { src: g8, cat: "railings", h: "sq" },
   { src: g9, cat: "structures", h: "wide" },
   { src: g10, cat: "railings", h: "sq" },
   { src: g11, cat: "railings", h: "wide" },
   { src: g12, cat: "gates", h: "sq" },
   { src: g13, cat: "gates", h: "tall" },
   { src: g14, cat: "railings", h: "tall" },
-  { src: g15, cat: "details", h: "wide" },
+  { src: g15, cat: "railings", h: "wide" },
+  { src: g16, cat: "railings", h: "sq" },
+  { src: g17, cat: "railings", h: "wide" },
+  { src: g18, cat: "stairs", h: "tall" },
+  { src: g19, cat: "stairs", h: "wide" },
+  { src: g20, cat: "stairs", h: "sq" },
+  { src: g21, cat: "railings", h: "tall" },
+  { src: g22, cat: "railings", h: "wide" },
+  { src: g23, cat: "railings", h: "sq" },
+  { src: g24, cat: "gates", h: "wide" },
+
 
 ];
 
@@ -77,7 +96,7 @@ export function Gallery() {
     { id: "gates", key: "gallery.gates" },
     { id: "railings", key: "gallery.railings" },
     { id: "structures", key: "gallery.structures" },
-    { id: "details", key: "gallery.details" },
+    { id: "stairs", key: "gallery.stairs" },
   ];
 
   return (
