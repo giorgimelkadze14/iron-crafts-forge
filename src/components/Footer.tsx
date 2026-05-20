@@ -1,5 +1,6 @@
 import { Facebook } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   const { t, lang } = useI18n();
@@ -15,8 +16,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div className="flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-sm metal-border">
-              <span className="text-[11px] font-bold tracking-[0.2em]">IC</span>
+            <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-full">
+              <img src={logo} alt="Iron Crafts" className="h-10 w-10 object-contain" />
             </span>
             <div>
               <div className="text-sm font-semibold tracking-[0.25em]">IRON CRAFTS</div>
